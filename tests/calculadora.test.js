@@ -19,3 +19,26 @@ test("0 + 5 devuelve 5", () => {
 test("-2 + 2 devuelve 0", () => {
   expect(sumar(-2, 2)).toBe(0);
 });
+
+// Muchos test para una misma función, agrupadas usando describe
+
+describe("Función sumar", () => {
+
+
+    test("suma números positivos", () => {
+        expect(sumar(2, 3)).toBe(5);
+    });
+
+
+    test("suma con cero", () => {
+        expect(sumar(5, 0)).toBe(5);
+    });
+
+
+    test("suma números negativos", () => {
+        expect(sumar(-2, -3)).toBe(-5);
+    });
+
+
+});
+
