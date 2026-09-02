@@ -18,6 +18,11 @@ describe("Test de la clase cuenta bancaria", () => {
         expect(cuenta.obtenerSaldo()).toBe(1500);
     });
 
+    test("depositar un monto negativo lanza un error", () => {
+        const cuenta = new CuentaBancaria(1000);
+        expect(() => cuenta.depositar(-500)).toThrow("El monto a depositar debe ser mayor que 0");
+    });
+
     test("retirar dinero disminuye el saldo de la cuenta", () => {
         const cuenta = new CuentaBancaria(1000);
         cuenta.retirar(300);

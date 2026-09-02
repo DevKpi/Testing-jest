@@ -8,6 +8,9 @@ class CuentaBancaria {
     }
 
     depositar(monto) {
+        if (monto <= 0) {
+            throw new Error("El monto a depositar debe ser mayor que 0");
+        }
         this.#saldo += monto;
     }
 
