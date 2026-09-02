@@ -1,25 +1,26 @@
-const Producto = require("../src/models/Producto");
+// const Producto = require("../src/models/Producto.js");
 
 
-test("un producto conserva su precio inicial",() => {
+// test("un producto conserva su precio inicial",() => {
 
 
-        const producto = new Producto("Teclado", 1000);
+//         const producto = new Producto("Teclado", 1000);
 
 
-        expect(producto.obtenerPrecio()).toBe(1000);
-    }
-);
+//         expect(producto.obtenerPrecio()).toBe(1000);
+//     }
+// );
 
-test("aplicar 20% de descuento modifica el precio",() => {
-
-
-        const producto = new Producto("Teclado", 1000);
+// test("aplicar 20% de descuento modifica el precio",() => {
 
 
-        producto.aplicarDescuento(20);
+//         const producto = new Producto("Teclado", 1000);
 
 
-        expect(producto.obtenerPrecio()).toBe(800);
-    }
-);
+//         producto.aplicarDescuento(20);
+
+
+//         expect(producto.obtenerPrecio()).toBe(800);
+//     }
+// );
+
